@@ -1,0 +1,22 @@
+{
+  "name": "isomorphic-service",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "author": "Pierre Reimertz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0"
+  },
+  "babel": {
+    "plugins": ["transform-async-to-generator"]
+  }
+}
